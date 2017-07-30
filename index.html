@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pinterest</title>
+	<link rel="stylesheet" type="text/css" href="dist/css/style.min.css">
+
+</head>
+<body>
+	<!--nav buscador-->
+	<nav class="bloque">
+		<a><i class="fa fa-pinterest bloque_logo" aria-hidden="true"></i>
+		<h3 class="bloque_inicio">inicio</h3><a>
+		<form action="">
+			<input type="text" name="search" placeholder="search"><br>
+  		<input type="submit" value="Submit">
+		</form>
+		<select class="bloque_select" name="list" form="carform">
+			<option value="feed">Todos los Pines <i class="fa fa-chevron-down" aria-hidden="true"></i></option>
+			<option value="feed">Feed de Inicio</option>
+			<option value="populares">Populares</option>
+			<option value="diseño">Diseño</option>
+			<option value="tech">Tecnología</option>
+			<option value="geek">Geek</option>
+			<option value="viajes">Viajes</option>
+		</select>	
+	</nav>
+	<span></span>
+	<!--Pins trending-->
+	<div class="trending-pins">
+		
+	</div>
+	<section class="pins-board">
+		<!--Acá vienen las imagenes desde Json-->
+	</section>
+	<!--Scripts-->
+	<script src="https://use.fontawesome.com/0b8328eff3.js"></script>
+	<script type="text/javascript" src="dist/js/script.js"></script>
+</body>
+</html>
