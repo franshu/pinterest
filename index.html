@@ -3,15 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Pinterest</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,500" rel="stylesheet">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="dist/css/style.min.css">
-
 </head>
 <body>
 	<!--nav buscador-->
 	<nav class="bloque">
-		<a><i class="fa fa-pinterest bloque_logo" aria-hidden="true"></i>
-		<h3 class="bloque_inicio">inicio</h3><a>
-		<form action="">
+		<a><i class="fa fa-pinterest bloque__logo" aria-hidden="true"></i></a>
+		<h3 class="bloque__inicio">inicio</h3>
+		<form action="" class='bloque__search'>
 			<input type="text" name="search" placeholder="search"><br>
   		<input type="submit" value="Submit">
 		</form>
@@ -30,10 +31,20 @@
 	<div class="trending">
 		
 	</div>
-	<div class="pins-board">
-		<div class="pins-board__pins">
-			<img src="/dist/img/" alt="">
+	<!--Pins trending-->
+	<div id="pins-board">
 			<!--Acá vienen las imagenes desde Json-->
+	</div>
+	<!--Modal-->
+	<div id="pin-modal">
+		<div class="modal">
+			<button class="modal__close"></button>
+			<div class="modal__contenido">
+				<div class="modal__mascara"></div>
+				<h2></h2>
+				<p class="modal__descripcion"></p>
+				<p class="modal__username">Subido por <span class="modal__user"></span>desde #<span class="modal__hashtag"></span></p>
+			</div>
 		</div>
 	</div>
 	<!--Scripts-->
