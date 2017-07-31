@@ -55,6 +55,19 @@ $(document).on('click', '.pinContent', function() {
 		$('#pin-modal  .modal_hashtag').html(hashtag);
 	});
 
-	
+	//Abrir modal
+
+	$('#pin-modal').show().stop().animate({'opacity':'1'},300, function(){
+		$(this).find('.modal').stop().animate({'top':'50%', 'opacity':'1'},300);
+	});
+});
+
+	//cerrar modal
+	$(document).on('click', '#pin-modal.closeModal', function(){
+		$('#modContent .modal').stop().animate({'opacity':'0', 'top':'40%'},300, function(){
+		$(this).parent().stop().animate({'opacity':'0'},300, function(){
+			$(this).hide();
+		});
+	});
 });
 
