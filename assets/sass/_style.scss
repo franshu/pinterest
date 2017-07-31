@@ -1,11 +1,71 @@
+body{
+	min-width: 320px;
+	width:100%;
+	height: auto;
+	padding: 0px;
+	overflow-x: hidden;
+	background:#fff;
+	font-family:'Roboto', sans-serif;
+}
+//navbar
 .bloque{
 	margin: 0;
 	padding: 0;
-	display:none;
-	font-family:'Roboto', sans-serif;
 }
 
 .bloque__logo{
 	color:#bd081c;
 	font-size: 15px;
+}
+
+
+.modal__mascara{
+	background-size: cover!important;
+	background-position: 50% 50%!important;
+	background-repeat: no-repeat!important;
+		img{
+			opacity: 0;
+		}
+}
+
+//contenido pines
+
+#pins-board{
+	{
+  position: relative;
+  column-width: 235px;
+  -webkit-column-width: 235px;
+  -moz-column-width: 235px;
+  column-gap: 24px;
+  -webkit-column-gap: 24px;
+  -moz-column-gap: 24px;
+  width: 1276px;
+  margin: 0px auto 0px auto;
+}
+#pins-board .pinContent{
+  position: relative;
+  background: #fff;
+  margin: 0px 0px 24px 0px;
+  padding: 0px;
+  width: 235px;
+  display: inline-block;
+  column-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  -moz-break-inside: avoid;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  transition: all .4s ease;
+  -wekit-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+}
+#pins-board .pinContent:hover{
+  background-color: #efefef;
+}
+.pinContent.medium{
+  height: 340px;
+}
+.pinContent.large{
+  height: 570px;
 }
